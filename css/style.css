@@ -1,3 +1,29 @@
+:root {
+  --special-blue: hsl(180, 29%, 50%);
+}
+
+body {
+  background-color:hsl(180, 52%, 96%);
+  font-family: 'Spartan', sans-serif;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.special-blue {
+  color: hsl(180, 29%, 50%);
+}
+
 #top-bg {
   background: url('/images/bg-header-desktop.svg');
   min-height:150px;
@@ -11,4 +37,42 @@
   min-height: 150px;
   background-color:hsl(180, 29%, 50%);
   opacity: 0.9;
+}
+
+#main-section {
+  background-color:  hsl(180, 52%, 96%);
+  height: 100vh;
+}
+
+.bg-special-blue {
+  background-color:hsl(180, 29%, 50%);
+}
+
+#main-section .card {
+  border-radius: 5px;
+  border-left: var(--special-blue) 5px solid;
+}
+
+.first {
+  color: var(--special-blue);
+  font-weight: 700;
+}
+
+.new {
+  color: #fff;
+  background-color: hsl(180, 29%, 50%);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.featured {
+    color: #fff;
+    background-color: #333;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.last-line {
+  font-weight:lighter;
+  font-size: 14px;
 }
