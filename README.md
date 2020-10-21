@@ -2,7 +2,7 @@
 
 Desktop Design:
 
-![2020-10-21 (2)](https://user-images.githubusercontent.com/72794422/96753590-c2620700-13d8-11eb-98ad-7dcfa78d5416.png | width=100)
+![2020-10-21 (2)](https://user-images.githubusercontent.com/72794422/96753590-c2620700-13d8-11eb-98ad-7dcfa78d5416.png)
 
 
 Mobile Design:
