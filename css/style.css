@@ -2,22 +2,19 @@
   --special-blue: hsl(180, 29%, 50%);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color:hsl(180, 52%, 96%);
   font-family: 'Spartan', sans-serif;
 }
 
-h6 {
-  font-size: 12px;
-}
-
-h5 {
-  font-size: 14px;
-}
-
-h4 {
-  font-size: 1.1rem;
-  font-weight: 700;
+.bg-special-blue {
+  background-color:hsl(180, 29%, 50%);
 }
 
 .special-blue {
@@ -44,18 +41,35 @@ h4 {
   height: 100vh;
 }
 
-.bg-special-blue {
-  background-color:hsl(180, 29%, 50%);
-}
-
-#main-section .card {
-  border-radius: 5px;
+.card {
+  position: relative;
+  width: 100%;
   border-left: var(--special-blue) 5px solid;
+  box-shadow: 0px 5px 20px rgb(71, 71, 71);
 }
 
-.first {
-  color: var(--special-blue);
+.card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item-start {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.item-start img {
+  align-self: center;
+  width: 6rem;
+  height: 6rem;
+}
+
+.company {
   font-weight: 700;
+  font-size: 15px;
+  color:hsl(180, 29%, 50%);
 }
 
 .new {
@@ -63,6 +77,7 @@ h4 {
   background-color: hsl(180, 29%, 50%);
   font-size: 10px;
   font-weight: 700;
+  margin-right: 5px;
 }
 
 .featured {
@@ -72,7 +87,52 @@ h4 {
     font-weight: 700;
 }
 
-.last-line {
-  font-weight:lighter;
-  font-size: 14px;
+.role {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.last {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.item-end {
+  align-self: center;
+  color: var(--special-blue);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.tech-item {
+  background-color:hsl(180, 52%, 96%);
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 6px;
+}
+
+
+
+@media(max-width: 720px) {
+  .card img {
+    position: absolute; 
+    height: 50px;
+    width: 50px;
+    top: -20px;
+  }
+
+  .card {
+    align-items: flex-start;
+  }
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-start {
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
 }
